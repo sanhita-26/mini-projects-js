@@ -1,0 +1,60 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(206, 205, 205);
+}
+
+h1{
+    color: rgb(87, 182, 255);
+}
+
+form{
+    background-color: aliceblue;
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(58, 58, 58, 0.3);
+}
+
+
+#textBox{
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid rgb(88, 88, 88);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+label{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+button{
+    margin-top: 15px;
+    background-color: rgb(255, 81, 81);
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(255, 116, 116);
+    color: black;
+    transition: 0.2ms;
+}
+
+#result{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+input[type="radio"] {
+    transform: scale(2.0);
+    margin-right: 8px;
+    cursor: pointer;
+    accent-color: black;
+}

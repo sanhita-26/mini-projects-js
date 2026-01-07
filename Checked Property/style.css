@@ -1,0 +1,100 @@
+/* Hide ugly default radios */
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #777;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: 0.2s ease;
+    margin-right: 10px;
+}
+
+/* Filled circle when selected */
+input[type="radio"]:checked {
+    border-color: #4A90E2;
+}
+
+input[type="radio"]:checked::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #4A90E2;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Labels */
+label {
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+/* Hide ugly default checkbox */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #777;
+    border-radius: 6px; /* rounded square */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: 0.2s ease;
+    margin-right: 10px;
+}
+
+/* Border change on check */
+input[type="checkbox"]:checked {
+    border-color: #4A90E2;
+    background: #4A90E2;
+}
+
+/* Tick */
+input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: translate(-50%, -60%) rotate(45deg);
+    top: 50%;
+    left: 50%;
+}
+    
+/* Label styling */
+.checkbox-label {
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#mySubmit{
+    color: black;
+    background-color: rgb(6, 209, 255);
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    text-decoration: none;
+    border: #4adae2;
+    font-size: large;
+}
+
+#mySubmit:hover{
+    background-color: #4a68e2;
+    color: #33f5ff;
+    transition: 2ms;
+    transition-duration: 2ms;
+    border-radius: 8px;
+}
